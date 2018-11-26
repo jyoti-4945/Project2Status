@@ -19,11 +19,14 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
 	rel="stylesheet" />
 	<link rel="stylesheet" href="resources/css/notification.css">
-	<link rel="stylesheet" href="resources/css/fileinput.min.js" type="text/css" media="all" />
+	<link rel="stylesheet" href="js/fileinput.min.js" type="text/css" media="all" />
 	<link rel="stylesheet" href="themes/explorer/theme.css" media="all" type="text/css" />
 	<script src="js/fileinput.min.js" type="text/javascript"></script>
 	<script src="themes/explorer/theme.js" type="text/javascript"></script>
-	
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.1/sockjs.js"></script>	
 </head>
 <body ng-app="app">
 	<nav class="class="navbar navbar-light" style="background-color: #e3f2fd;">
@@ -118,11 +121,11 @@
 <script type="text/javascript" src="controllers/blogindetailcontroller.js"></script>
 <script type="text/javascript" src="services/notificationservice.js"></script>
 <script type="text/javascript" src="controllers/notificationcontroller.js"></script>
-<script type="text/javascript" src="controllers/friendservice.js"></script>
+<script type="text/javascript" src="controllers/friendcontroller.js"></script>
+<script type="text/javascript" src="services/friendservice.js"></script>
 <script type="text/javascript" src="services/chatservice.js"></script>
 <script type="text/javascript" src="controllers/chatcontroller.js"></script>
 
-<script type="text/javascript" src="js/sockjs/sockjs.min.js"></script>
-	<script type="text/javascript" src="js/stomp/dist/stomp.min.js"></script>
+
 
 </html>

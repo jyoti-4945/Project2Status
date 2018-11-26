@@ -20,12 +20,12 @@ public class FriendDaoImpl implements FriendDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 		public List<User> getAllSuggestedUsers(String email) {
-			String queryString="select * from user_s190038 where email in "
-					+ "( select email from user_s190038 where email!=? "
+			String queryString="select * from user_proj2 where email in "
+					+ "( select email from user_proj2 where email!=? "
 					+ " minus "
-					+ "(select toId_email from friend_s190038 where fromId_email=? "
+					+ "(select toId_email from friend_proj2 where fromId_email=? "
 					+ " union "
-					+ "select fromId_email from friend_s190038 where toId_email=?))";
+					+ "select fromId_email from friend_proj2 where toId_email=?))";
 			
 			Session session=sessionFactory.getCurrentSession();
 			SQLQuery sqlQuery=session.createSQLQuery(queryString);
